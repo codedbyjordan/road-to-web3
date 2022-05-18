@@ -7,7 +7,7 @@ const main = async () => {
     await chainBattles.deployed();
 
     await chainBattles.mint();
-    console.log(await chainBattles.getTokenURI(2));
+    console.log(await chainBattles.getCharacter(5));
     console.log(`Contract deployed to ${chainBattles.address}`);
     process.exit(0);
   } catch (error) {
